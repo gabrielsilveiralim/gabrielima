@@ -1,4 +1,3 @@
-
 import './About.css'
 import Fapema from '../../assets/fapema.png'
 import Ong from '../../assets/ong.png'
@@ -6,6 +5,11 @@ import Ong from '../../assets/ong.png'
 
 
 export default function About() {
+
+
+
+
+
     return (
         <>
 
@@ -103,21 +107,21 @@ export default function About() {
                 </section>
             </main>
 
-            <main className="mt-20 px-4 font-[Poppins]">
-                <h1 className="text-2xl font-semibold text-center mb-10">Projetos</h1>
+            <main className="mt-20 px-4 font-[Poppins]" id='projects'>
+                <h1 className="text-2xl text-sky-800 font-semibold text-center mb-10">Projetos</h1>
 
-                <section className="grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
+                <section className="grid grid-cols-1 md:grid-cols-2 gap-10 items-start" id="project">
                     <div className="relative bg-white rounded-lg shadow-md p-6">
                         <div className="absolute top-4 right-8 flex gap-2 text-3xl text-gray-700">
                             <i className="devicon-react-original colored"></i>
                             <i className="devicon-tailwindcss-plain colored"></i>
                         </div>
 
-                        <h2 className="text-lg font-semibold mb-4">Fapema</h2>
+                        <h2 className="text-lg font-semibold text-sky-800  mb-4">Fapema</h2>
                         <img src={Fapema} alt="Projeto Fapema" className="w-full h-40 object-cover rounded-md mb-4" />
                         <div className="flex justify-between">
-                            <a href="https://link-do-projeto.com" target="_blank" className="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600">Ver projeto</a>
-                            <a href="https://github.com/seu-repositorio" target="_blank" className="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600">Ver repositório</a>
+                            <a href="https://gabrielsilveiralim.github.io/fapema/" target="_blank" className="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600">Ver projeto</a>
+                            <a href="https://github.com/gabrielsilveiralim/fapema" target="_blank" className="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600">Ver repositório</a>
                         </div>
                     </div>
 
@@ -128,11 +132,11 @@ export default function About() {
                             <i className="devicon-javascript-plain colored"></i>
                         </div>
 
-                        <h2 className="text-lg font-semibold mb-4">Ong Sem Fronteira</h2>
+                        <h2 className="text-lg font-semibold text-sky-800  mb-4">Ong Sem Fronteira</h2>
                         <img src={Ong} alt="Ong" className="w-full h-40 object-cover rounded-md mb-4" />
                         <div className="flex justify-between">
-                            <a href="https://link-do-projeto2.com" target="_blank" className="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600">Ver projeto</a>
-                            <a href="https://github.com/repositorio-projeto2" target="_blank" className="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600">Ver repositório</a>
+                            <a href="https://gabrielsilveiralim.github.io/ong-sem-fronteira/" target="_blank" className="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600">Ver projeto</a>
+                            <a href="https://github.com/gabrielsilveiralim/ong-sem-fronteira" target="_blank" className="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600">Ver repositório</a>
                         </div>
                     </div>
 
