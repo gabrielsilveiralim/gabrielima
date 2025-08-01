@@ -1,14 +1,11 @@
 import './About.css'
 import Fapema from '../../assets/fapema.png'
 import Ong from '../../assets/ong.png'
-
+import { gsap } from 'gsap'
+import { useEffect } from 'react'
 
 
 export default function About() {
-
-
-
-
 
     return (
         <>
