@@ -1,5 +1,6 @@
 import './About.css'
 import Fapema from '../../assets/fapema.png'
+import Ney from '../../assets/ney.png'
 import Ong from '../../assets/ong.png'
 
 
@@ -115,7 +116,7 @@ export default function About() {
                         <h2 className="text-lg font-semibold text-sky-800  mb-4">Fapema</h2>
                         <img src={Fapema} alt="Projeto Fapema" className="w-full h-40 object-cover rounded-md mb-4" />
                         <div className="flex justify-between">
-                            <a href="https://gabrielsilveiralim.github.io/fapema/" target="_blank" className="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600">Ver projeto</a>
+                            <a href="https://fapema.vercel.app/" target="_blank" className="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600">Ver projeto</a>
                             <a href="https://github.com/gabrielsilveiralim/fapema" target="_blank" className="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600">Ver repositório</a>
                         </div>
                     </div>
@@ -132,6 +133,20 @@ export default function About() {
                         <div className="flex justify-between">
                             <a href="https://gabrielsilveiralim.github.io/ong-sem-fronteira/" target="_blank" className="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600">Ver projeto</a>
                             <a href="https://github.com/gabrielsilveiralim/ong-sem-fronteira" target="_blank" className="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600">Ver repositório</a>
+                        </div>
+                    </div>
+
+                    <div className="relative bg-white rounded-lg shadow-md p-6">
+                        <div className="absolute top-4 right-4 flex gap-2 text-3xl text-gray-700">
+                            <i className="devicon-react-original colored"></i>
+                            <i className="devicon-tailwindcss-plain colored"></i>
+                        </div>
+
+                        <h2 className="text-lg font-semibold text-sky-800  mb-4">Neymar Jr</h2>
+                        <img src={Ney} alt="Neymar" className="w-full h-40 object-cover rounded-md mb-4" />
+                        <div className="flex justify-between">
+                            <a href="https://neymar-jr-pi.vercel.app/" target="_blank" className="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600">Ver projeto</a>
+                            <a href="https://github.com/gabrielsilveiralim/neymar-jr" target="_blank" className="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600">Ver repositório</a>
                         </div>
                     </div>
 
