@@ -23,7 +23,7 @@ export default function About() {
                     <p className='ml-2 w-9/10 border-2 border-white  mt-5 mb-5'></p>
                 </section>
 
-                <section className='flex flex-col justify-center  '>
+                <section className='flex flex-col justify-center'>
                     <h1 className='flex justify-center mx-auto text-white text-lg mb-4 font-medium sm:font-semibold sm:text-xl'>Experiências</h1>
 
                     <div className='grid grid-cols-2 sm:grid-cols-5 gap-3 pl-10 pr-4 text-white mb-4 '>
@@ -77,12 +77,9 @@ export default function About() {
                         <div className='flex flex-col md:mx-auto  mb-4 '>
                             <div className='flex items-center gap-4'>
                                 <p className='flex justify-start text-base sm:text-lg sm:font-normal font-light'>NodeJS, React e TypeScript</p>
-                                <a href="https://www.udemy.com/certificate/UC-639f5553-24af-4ab7-97c4-5ad96259e508/" target='_blank' >
-                                    <svg xmlns='https://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' strokeWidth={1.5} stroke='currentColor' className='w-4 h-4 mt-0.5'> <path strokeLinecap='round' strokeLinejoin='round' d='M13.5 4.5H19.5V10.5M10.5 13.5L19.5 4.5M4.5 19.5H19.5' /> </svg>
-                                </a>
                             </div>
                             <div className='flex text-sm gap-3'>
-                                <p>Concluido - 2025</p>
+                                <p>Cursando</p>
                                 <p>Udemy, EAD</p>
                             </div>
                         </div>
