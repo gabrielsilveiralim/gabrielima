@@ -2,9 +2,28 @@ import './About.css'
 import Fapema from '../../assets/fapema.png'
 import Ney from '../../assets/ney.png'
 import Ong from '../../assets/ong.png'
+import { useEffect } from 'react';
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+
+gsap.registerPlugin(ScrollTrigger);
+
 
 
 export default function About() {
+    
+    useEffect(() => {
+        gsap.fromTo(".project-card",
+            { opacity: 0, y: 30 },
+            {
+                opacity: 1,
+                y: 0,
+                duration: 2,
+                stagger: 0.7,
+                scrollTrigger: "#project"
+            }
+        );
+    }, []);
 
     return (
         <>
@@ -104,7 +123,7 @@ export default function About() {
                 <h1 className="text-2xl text-sky-800 font-semibold text-center mb-10">Projetos</h1>
 
                 <section className="grid grid-cols-1 md:grid-cols-2 gap-10 items-start" id="project">
-                    <div className="relative bg-white rounded-lg shadow-md p-6">
+                    <div className="project-card relative bg-white rounded-lg shadow-md p-6">
                         <div className="absolute top-4 right-8 flex gap-2 text-3xl text-gray-700">
                             <i className="devicon-react-original colored"></i>
                             <i className="devicon-tailwindcss-plain colored"></i>
@@ -118,7 +137,7 @@ export default function About() {
                         </div>
                     </div>
 
-                    <div className="relative bg-white rounded-lg shadow-md p-6">
+                    <div className="project-card relative bg-white rounded-lg shadow-md p-6">
                         <div className="absolute top-4 right-4 flex gap-2 text-3xl text-gray-700">
                             <i className="devicon-html5-plain colored"></i>
                             <i className="devicon-css3-plain colored"></i>
@@ -133,7 +152,7 @@ export default function About() {
                         </div>
                     </div>
 
-                    <div className="relative bg-white rounded-lg shadow-md p-6">
+                    <div className="project-card relative bg-white rounded-lg shadow-md p-6">
                         <div className="absolute top-4 right-4 flex gap-2 text-3xl text-gray-700">
                             <i className="devicon-react-original colored"></i>
                             <i className="devicon-tailwindcss-plain colored"></i>
