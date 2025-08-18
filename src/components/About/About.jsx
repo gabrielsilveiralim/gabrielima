@@ -25,6 +25,33 @@ export default function About() {
         );
     }, []);
 
+    useEffect(() => {
+        gsap.fromTo("#right",    
+            { opacity: 0, x:50},
+            {
+                opacity: 1,
+                x: 0,
+                duration: 2,
+                stagger: 0.5,
+                scrollTrigger: "#right"
+            }
+        );
+    }, []);
+
+        useEffect(() => {
+        gsap.fromTo("#left",    
+            { opacity: 0, x:-50},
+            {
+                opacity: 1,
+                x: 0,
+                duration: 2,
+                stagger: 0.5,
+                scrollTrigger: "#left"
+            }
+        );
+    }, []);
+
+
     return (
         <>
 
@@ -45,21 +72,20 @@ export default function About() {
                 <section className='flex flex-col justify-center'>
                     <h1 className='flex justify-center mx-auto text-white text-lg mb-4 font-medium sm:font-semibold sm:text-xl'>Experiências</h1>
 
-                    <div className='grid grid-cols-2 sm:grid-cols-5 gap-3 pl-10 pr-4 text-white mb-4 '>
-                        <p className='text-base text-center h-auto  rounded-sm'>CSS </p>
-                        <p className='text-base text-center h-auto  rounded-sm'>JavaScript</p>
-                        <p className='text-base text-center h-auto  rounded-sm'>Tailwind CSS</p>
-                        <p className='text-base text-center h-auto  rounded-sm'>Node</p>
-                        <p className='text-base text-center h-auto  rounded-sm'>React</p>
-                        <p className='text-base text-center h-auto  rounded-sm'>HTML</p>
-                        <p className='text-base text-center h-auto  rounded-sm'>Python</p>
-                        <p className='text-base text-center h-auto  rounded-sm'>TypeScript</p>
-                        <p className='text-base text-center h-auto  rounded-sm'>Figma</p>
-                        <p className='text-base text-center h-auto  rounded-sm'>Next</p>
-                        <p className='text-base text-center h-auto  rounded-sm'>React Native</p>
+                    <div className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3 pl-10 pr-4 text-white mb-4' id='skills'>
+                        <p className='text-base text-center h-auto  rounded-sm' id='left'>HTML </p>
+                        <p className='text-base text-center h-auto  rounded-sm' id='right'>CSS</p>
+                        <p className='text-base text-center h-auto  rounded-sm' id='left'>JavaScript</p>
+                        <p className='text-base text-center h-auto  rounded-sm' id='right'>Tailwind CSS</p>
+                        <p className='text-base text-center h-auto  rounded-sm' id='left'>React</p>
+                        <p className='text-base text-center h-auto  rounded-sm' id='right'>React Native</p>
+                        <p className='text-base text-center h-auto  rounded-sm' id='left'>Next</p>
+                        <p className='text-base text-center h-auto  rounded-sm' id='right'>TypeScript</p>
+                        <p className='text-base text-center h-auto  rounded-sm'id='left'>Python</p>
+                        <p className='text-base text-center h-auto  rounded-sm' id='right'>Figma</p>
+                        <p className='text-base text-center h-auto  rounded-sm'id='left'>Node</p>
                     </div>
                     <p className='ml-6 border-2 border-white mr-6 sm:ml-8 md:ml-10 md:mr-8 lg:ml-16 '></p>
-
                 </section>
 
                 <section className=' text-white '>
