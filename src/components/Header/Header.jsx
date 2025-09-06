@@ -23,9 +23,9 @@ export default function Header() {
                     <h1 className='flex text-2xl font-semibold text-sky-700' >Gabriel Lima </h1>
 
                     <div className='flex text-base gap-6 sm:gap-10 sm:text-lg text-sky-700'>
-                        <li><a href="#about" className=''>Sobre</a></li>
-                        <li><a href="#form" className=''>Formações</a></li>
-                        <li><a href="#footer" className='' >Contato</a></li>
+                        <a href="#about" className=''>Sobre</a>
+                        <a href="#form" className=''>Formações</a>
+                        <a href="#footer" className='' >Contato</a>
                     </div>
                 </nav>
                 <section className='mx-auto sm:px-2 md:px-12 lg:px-26 xl:px-38 '>
