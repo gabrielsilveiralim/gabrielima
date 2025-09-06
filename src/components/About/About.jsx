@@ -1,6 +1,6 @@
 import './About.css'
 import Fapema from '../../assets/fapema.png'
-import Ney from '../../assets/ney.png'
+import Solar from '../../assets/solar.jpeg'
 import Ong from '../../assets/ong.png'
 import { useEffect } from 'react';
 import { gsap } from 'gsap';
@@ -9,9 +9,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 gsap.registerPlugin(ScrollTrigger);
 
 
-
 export default function About() {
-    
     useEffect(() => {
         gsap.fromTo(".project-card",
             { opacity: 0, y: 30 },
@@ -26,8 +24,8 @@ export default function About() {
     }, []);
 
     useEffect(() => {
-        gsap.fromTo("#right",    
-            { opacity: 0, x:50},
+        gsap.fromTo("#right",
+            { opacity: 0, x: 50 },
             {
                 opacity: 1,
                 x: 0,
@@ -38,9 +36,9 @@ export default function About() {
         );
     }, []);
 
-        useEffect(() => {
-        gsap.fromTo("#left",    
-            { opacity: 0, x:-50},
+    useEffect(() => {
+        gsap.fromTo("#left",
+            { opacity: 0, x: -50 },
             {
                 opacity: 1,
                 x: 0,
@@ -55,8 +53,8 @@ export default function About() {
     return (
         <>
 
+            {/* About Me Section */}
             <main className='font-[Poppins] max-w-9/10 h-full bg-sky-700 rounded-xl -ml-5 mt-20 '>
-
                 <section className='flex  flex-col justify-between items-center '>
                     <h1 className='flex justify-center mx-auto text-white text-xl mt-6 mb-4 font-medium sm:font-semibold sm:text-2xl '>Sobre</h1>
 
@@ -81,9 +79,9 @@ export default function About() {
                         <p className='text-base text-center h-auto  rounded-sm' id='right'>React Native</p>
                         <p className='text-base text-center h-auto  rounded-sm' id='left'>Next</p>
                         <p className='text-base text-center h-auto  rounded-sm' id='right'>TypeScript</p>
-                        <p className='text-base text-center h-auto  rounded-sm'id='left'>Python</p>
+                        <p className='text-base text-center h-auto  rounded-sm' id='left'>Python</p>
                         <p className='text-base text-center h-auto  rounded-sm' id='right'>Figma</p>
-                        <p className='text-base text-center h-auto  rounded-sm'id='left'>Node</p>
+                        <p className='text-base text-center h-auto  rounded-sm' id='left'>Node</p>
                     </div>
                     <p className='ml-6 border-2 border-white mr-6 sm:ml-8 md:ml-10 md:mr-8 lg:ml-16 '></p>
                 </section>
@@ -92,7 +90,6 @@ export default function About() {
                     <h1 className='flex justify-center mx-auto text-white text-lg mb-4 mt-4 font-medium sm:font-semibold sm:text-xl'>Capacitações</h1>
 
                     <div className='grid grid-cols-1 md:grid-cols-2 pl-8 sm:pl-14 pr-6 '>
-
                         <div className='flex flex-col md:mx-auto mb-4'>
                             <div className='flex items-center gap-4'>
                                 <p className='flex justify-start text-base sm:text-lg sm:font-normal font-light'>Web Design Responsivo</p>
@@ -145,6 +142,8 @@ export default function About() {
                 </section>
             </main>
 
+
+            {/* Projects Section */}
             <main className="mt-20 px-4 font-[Poppins]" id='projects'>
                 <h1 className="text-2xl text-sky-800 font-semibold text-center mb-10">Projetos</h1>
 
@@ -180,22 +179,20 @@ export default function About() {
 
                     <div className="project-card relative bg-white rounded-lg shadow-md p-6">
                         <div className="absolute top-4 right-4 flex gap-2 text-3xl text-gray-700">
-                            <i className="devicon-react-original colored"></i>
-                            <i className="devicon-tailwindcss-plain colored"></i>
+                            <i class="devicon-nextjs-plain colored"></i>
+                            <i class="devicon-threejs-original colored"></i>
+                            <i class="devicon-typescript-plain colored"></i>
                         </div>
 
-                        <h2 className="text-lg font-semibold text-sky-800  mb-4">Neymar Jr</h2>
-                        <img src={Ney} alt="Neymar" className="w-full h-40 object-cover rounded-md mb-4" />
+                        <h2 className="text-lg font-semibold text-sky-800  mb-4">Solar System</h2>
+                        <img src={Solar} alt="solar" className="w-full h-40 object-cover rounded-md mb-4" />
                         <div className="flex justify-between">
-                            <a href="https://neymar-jr-pi.vercel.app/" target="_blank" className="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600">Ver projeto</a>
-                            <a href="https://github.com/gabrielsilveiralim/neymar-jr" target="_blank" className="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600">Ver repositório</a>
+                            <a href="https://solar-syste.vercel.app/" target="_blank" className="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600">Ver projeto</a>
+                            <a href="https://github.com/gabrielsilveiralim/solar-system" target="_blank" className="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600">Ver repositório</a>
                         </div>
                     </div>
-
                 </section>
             </main>
-
-
         </>
     )
 }
