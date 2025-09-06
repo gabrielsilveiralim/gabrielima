@@ -73,15 +73,17 @@ export default function About() {
                     <div className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3 pl-10 pr-4 text-white mb-4' id='skills'>
                         <p className='text-base text-center h-auto  rounded-sm' id='left'>HTML </p>
                         <p className='text-base text-center h-auto  rounded-sm' id='right'>CSS</p>
-                        <p className='text-base text-center h-auto  rounded-sm' id='left'>JavaScript</p>
-                        <p className='text-base text-center h-auto  rounded-sm' id='right'>Tailwind CSS</p>
-                        <p className='text-base text-center h-auto  rounded-sm' id='left'>React</p>
-                        <p className='text-base text-center h-auto  rounded-sm' id='right'>React Native</p>
-                        <p className='text-base text-center h-auto  rounded-sm' id='left'>Next</p>
-                        <p className='text-base text-center h-auto  rounded-sm' id='right'>TypeScript</p>
-                        <p className='text-base text-center h-auto  rounded-sm' id='left'>Python</p>
-                        <p className='text-base text-center h-auto  rounded-sm' id='right'>Figma</p>
-                        <p className='text-base text-center h-auto  rounded-sm' id='left'>Node</p>
+                        <p className='text-base text-center h-auto  rounded-sm' id='left'>SASS</p>
+                        <p className='text-base text-center h-auto  rounded-sm' id='right'>JavaScript</p>
+                        <p className='text-base text-center h-auto  rounded-sm' id='left'>Tailwind CSS</p>
+                        <p className='text-base text-center h-auto  rounded-sm' id='right'>React</p>
+                        <p className='text-base text-center h-auto  rounded-sm' id='left'>React Native</p>
+                        <p className='text-base text-center h-auto  rounded-sm' id='right'>Next</p>
+                        <p className='text-base text-center h-auto  rounded-sm' id='left'>TypeScript</p>
+                        <p className='text-base text-center h-auto  rounded-sm' id='right'>Python</p>
+                        <p className='text-base text-center h-auto  rounded-sm' id='left'>Figma</p>
+                        <p className='text-base text-center h-auto  rounded-sm' id='right'>Node</p>
+
                     </div>
                     <p className='ml-6 border-2 border-white mr-6 sm:ml-8 md:ml-10 md:mr-8 lg:ml-16 '></p>
                 </section>
