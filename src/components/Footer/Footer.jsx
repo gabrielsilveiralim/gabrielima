@@ -8,7 +8,7 @@ export default function Footer() {
     return (
         <>
 
-            <footer>
+            <footer id='footer'>
 
                 <section className='flex  justify-center items-center  gap-6 sm:gap-8 mx auto mt-10 mb-10'>
 

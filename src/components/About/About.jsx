@@ -58,7 +58,7 @@ export default function About() {
                 <section className='flex  flex-col justify-between items-center '>
                     <h1 className='flex justify-center mx-auto text-white text-xl mt-6 mb-4 font-medium sm:font-semibold sm:text-2xl '>Sobre</h1>
 
-                    <p className='flex  text-white text-base w-full pl-8 pr-4 sm:text-lg  sm:max-w-2xl sm:pl-15 md:max-w-4xl md:pl-12 '>Atualmente, curso o último ano do Ensino Médio do Iema Dr João Bacelar Portela,
+                    <p id='about' className='flex  text-white text-base w-full pl-8 pr-4 sm:text-lg  sm:max-w-2xl sm:pl-15 md:max-w-4xl md:pl-12 '>Atualmente, curso o último ano do Ensino Médio do Iema Dr João Bacelar Portela,
                         onde curso Técnico em Informática para a Internet, desenvolvi habilidades de desenvolvimento web ao longo da formação
                         e por meio de iniciativas complementares. Tenho interesse constante em aprender novas linguagens e tecnologias, buscando evoluir tanto na parte técnica quanto
                         na parte de criação de interfaces eficientes e bem estruturadas.
@@ -86,7 +86,7 @@ export default function About() {
                     <p className='ml-6 border-2 border-white mr-6 sm:ml-8 md:ml-10 md:mr-8 lg:ml-16 '></p>
                 </section>
 
-                <section className=' text-white '>
+                <section id='form' className=' text-white '>
                     <h1 className='flex justify-center mx-auto text-white text-lg mb-4 mt-4 font-medium sm:font-semibold sm:text-xl'>Capacitações</h1>
 
                     <div className='grid grid-cols-1 md:grid-cols-2 pl-8 sm:pl-14 pr-6 '>
